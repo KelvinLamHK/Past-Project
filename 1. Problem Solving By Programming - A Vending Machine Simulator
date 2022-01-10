@@ -1,0 +1,1137 @@
+/**
+* ENGG1110 Problem Solving by Programming
+*
+* Course Project
+*
+* I declare that the project here submitted is original
+* except for source material explicitly acknowledged,
+* and that the same or closely related material has not been
+* previously submitted for another course.
+* I also acknowledge that I am aware of University policy and
+* regulations on honesty in academic work, and of the disciplinary
+* guidelines and procedures applicable to breaches of such
+* policy and regulations, as contained in the website.
+*
+* University Guideline on Academic Honesty:
+* https://www.cuhk.edu.hk/policy/academichonesty/
+*
+* Student Name : LAM TAT YIN
+* Student ID : 1155144730
+* Class/Section : ENGG1110
+* Date : 28/11/2019
+*/
+
+#include <stdio.h>
+#include <string.h>
+
+
+void question() {
+ printf("\nWhat would you like to do?\n1. Read product information\n2. Insert coin\n3. Press product button\n4. Press return button\n9. Open service menu (code required)\n0. Quit\nYour choice:");
+ return ;
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+
+void servicequestion(){
+  printf("(9) What would you like to do?\n1. Inspect machine status\n2. Withdraw all money\n3. Refill product\n4. Change product\n0. Go back\nYour choice:");
+
+ return;
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+
+int product_Aquantity(int addproduct_A, int sellproduct_A) {
+ static int productA,amount;
+ 
+  productA=productA+addproduct_A;
+ productA=productA-sellproduct_A;
+ return productA;
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+int revenue(int addrevenue) {
+ static int capital;
+ 
+  capital=capital+addrevenue;
+ 
+ return capital;
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+
+int product_Bquantity(int addproduct_B, int sellproduct_B) {
+ static int productB,amount;
+ 
+ productB+=addproduct_B;
+ productB-=sellproduct_B;
+ return productB;
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+
+int product_Cquantity(int addproduct_C, int sellproduct_C) {
+  static int productC,amount;
+ 
+ productC+=addproduct_C;
+ productC-=sellproduct_C;
+  
+ return productC;
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+
+int product_Dquantity(int addproduct_D, int sellproduct_D) {
+  static int productD,amount;
+ 
+ productD+=addproduct_D;
+ productD-=sellproduct_D;
+  
+ return productD;
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+int product_Equantity(int addproduct_E, int sellproduct_E) {
+ static int productE,amount;
+ 
+ productE+=addproduct_E;
+ productE-=sellproduct_E;
+  
+ return productE;
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+
+char *displayed_productsA_name( char nameA[],int check)
+{
+   static char *correct;
+  if (check == 0) {
+  
+ return correct; 
+  } else {
+  correct=nameA;
+   
+    return correct; }
+return correct;
+}
+
+int displayed_productsA_price(int priceA,int check) {
+  
+  static int correct;
+  if (check == 0) {
+ return correct; 
+  }
+   correct = priceA;
+  return correct;
+}
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+
+char *displayed_productsB_name(char nameB[],int check)
+{
+ static char *correct;
+  if (check == 0) {
+  
+ return correct; 
+  }
+   correct = nameB;
+  
+   return correct; 
+}
+
+int displayed_productsB_price(int priceB,int check) {
+  
+  static int correct;
+  if (check == 0) {
+ return correct; 
+  }
+   correct = priceB;
+  return correct;
+}
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+
+char *displayed_productsC_name(char nameC[],int check)
+{
+ static char *correct;
+  if (check == 0) {
+  
+ return correct; 
+  }
+   correct = nameC;
+  
+   return correct; 
+}
+
+int displayed_productsC_price(int priceC,int check) {
+  
+  static int correct;
+  if (check == 0) {
+ return correct; 
+  }
+   correct = priceC;
+  return correct;
+}
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+
+char *displayed_productsD_name(char nameD[],int check)
+{
+ static char *correct;
+  if (check == 0) {
+  
+ return correct; 
+  }
+   correct = nameD;
+  
+   return correct; 
+}
+
+int displayed_productsD_price(int priceD,int check) {
+  
+  static int correct;
+  if (check == 0) {
+ return correct; 
+  }
+   correct = priceD;
+  return correct;
+}
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+
+char *displayed_productsE_name(char nameE[],int check)
+{
+ static char *correct;
+  if (check == 0) {
+  
+ return correct; 
+  }
+   correct = nameE;
+  
+   return correct; 
+}
+
+int displayed_productsE_price(int priceE,int check) {
+  
+ static int correct;
+  if (check == 0) {
+ return correct; 
+  }
+   correct = priceE;
+  return correct;
+}
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+
+
+void productinfo () {
+
+ char D[100]="water";
+  int AA=10,BB=6,CC=5,DD=8,EE=7;
+
+ printf("\n(1) The displayed products are:\nA. %s ($%d)\nB. %s ($%d)\nC. %s ($%d)\nD. %s ($%d)\nE. %s ($%d)\n",displayed_productsA_name(D, 0 ),displayed_productsA_price(DD, 0),displayed_productsB_name(D, 0 ),displayed_productsB_price(DD, 0),displayed_productsC_name(D, 0 ),displayed_productsC_price(DD, 0),displayed_productsD_name(D, 0 ),displayed_productsD_price(DD, 0),displayed_productsE_name(D, 0 ),displayed_productsE_price(DD, 0));
+ 
+ return ;
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+
+void image (int totalmoney,char output,int quantityA,int quantityB,int quantityC,int quantityD,int quantityE) {
+  char productA=32,productB=32,productC=32,productD=32,productE=32;
+
+ if (totalmoney>=10) {
+ productA=79;
+ } 
+ if (totalmoney>=6) {
+ productB=79;
+ } 
+ if (totalmoney>=5) {
+ productC=79;
+ } 
+ if (totalmoney>=8) {
+ productD=79;
+ } 
+ if (totalmoney>=7) {
+ productE=79;
+ } 
+
+  if (quantityA == 0) {
+ productA=88;
+ } 
+
+ if (quantityB == 0) {
+ productB=88;
+ } 
+
+ if (quantityC == 0) {
+ productC=88;
+ }
+ 
+  if (quantityD == 0) {
+ productD=88;
+ }
+ 
+  if (quantityE == 0) {
+ productE=88;
+ } 
+ int A = displayed_productsA_price(1,0);
+ int B = displayed_productsB_price(1,0);
+ int C = displayed_productsC_price(1,0);
+ int D = displayed_productsD_price(1,0);
+ int E = displayed_productsE_price(1,0);
+ printf  ("*---------------------------*\n|      Vending Machine      |\n*---------------------------*\n|   A    B    C    D    E   |\n|  $");
+ if (A >=10) {
+   printf("%d  $",A);
+ } else {
+  printf(" %d  $",A);
+ }
+ if (B >=10) {
+   printf("%d  $",B);
+ } else {
+  printf(" %d  $",B);
+ }
+ if (C >=10) {
+   printf("%d  $",C);
+ } else {
+  printf(" %d  $",C);
+ }
+ if (D >=10) {
+   printf("%d  $",D);
+ } else {
+  printf(" %d  $",D);
+ }
+ if (E >=10) {
+   printf("%d  $",E);
+ } else {
+  printf(" %d  |\n",E);
+ }
+ printf("|  [%c]  [%c]  [%c]  [%c]  [%c]  |\n*---------------------------*\n|                    [$", productA,productB, productC, productD, productE);
+
+ if (totalmoney>=10) {
+ printf("%d]  |\n", totalmoney);}
+ else {
+ printf(" %d]  |\n", totalmoney);}
+ printf("|                           |\n|           [=%c=]           |\n*---------------------------*\n",output);///////////////end of image of machine////////////////
+
+ 
+ return ;
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+
+int coinfunction (int money) {
+ int coin,totalmoney,totalA,totalB,totalC,totalD,totalE;
+ totalA=product_Aquantity(0,0);
+ totalB=product_Bquantity(0,0);
+ totalC=product_Cquantity(0,0);
+ totalD=product_Dquantity(0,0);
+ totalE=product_Equantity(0,0);
+ printf("\n(2) Which coin would you like to insert?\n1. $1\n2. $2\n3. $5\n4. $10\n0. Go back\nYour choice:");
+ scanf("%d",&coin);
+ totalmoney = money;
+ 
+ if (coin>=0 && coin <=4) {
+ while (coin!=0) {
+ 
+ if (coin==1){
+  totalmoney+=1;
+ } if (coin==2) {
+  totalmoney+=2;
+ } if (coin==3){
+  totalmoney+=5;
+ } if (coin==4) {
+  totalmoney+=10;
+ } 
+ 
+  if (totalmoney>99) {
+    printf("Sorry,the maximum value is $99,you can't insert this one!!\n");
+  if (coin==1){
+  totalmoney-=1;
+ }  if (coin==2) {
+  totalmoney-=2;
+ } if (coin==3){
+  totalmoney-=5;
+ } if (coin==4) {
+  totalmoney-=10;
+  }
+  }
+  int inserted;
+  if (coin==1)
+  inserted=1;
+   if (coin==2)
+  inserted=2;
+   if (coin==3)
+  inserted=5;
+   if (coin==4)
+  inserted=10;
+  
+  printf("You have inserted $%d.\n\n",inserted);
+  image(totalmoney,61,totalA,totalB,totalC,totalD,totalE);
+  printf("\n(2) Which coin would you like to insert?\n1. $1\n2. $2\n3. $5\n4. $10\n0. Go back\nYour choice:");
+ scanf("%d",&coin);
+  
+ } if (coin == 0) {
+  printf("Going back!\n\n");
+ image(totalmoney,61,totalA,totalB,totalC,totalD,totalE);
+ question();
+  return totalmoney;
+ } 
+ 
+ } else  {
+   printf("Invalid choice!\n");
+ totalmoney=coinfunction(money);
+  return totalmoney;
+
+ } 
+  return totalmoney;
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+void vending_machine(int originmoney);
+
+int productselection(int money) {
+ printf("\n(3) Which product button would you like to press?\n1. A\n2. B\n3. C\n4. D\n5. E\n0. Go back\nYour choice:");
+ int selection,Aquantity=product_Aquantity(0,0),Bquantity=product_Bquantity(0,0),Cquantity=product_Cquantity(0,0),Dquantity=product_Dquantity(0,0),Equantity=product_Equantity(0,0);
+ scanf("%d", &selection);
+ 
+ if (selection != 0) {
+ if (selection == 1) {
+   int A;
+ A=displayed_productsA_price(100,0);
+ 
+  printf("You have pressed button A.\n\n");
+  if (money >= A &&Aquantity>0) {
+  money=money-A;
+  revenue(A);
+  Aquantity=product_Aquantity(0,1);
+  image(money,65,Aquantity, Bquantity, Cquantity,Dquantity, Equantity);
+  
+   }
+  else {
+    image(money,61,Aquantity, Bquantity, Cquantity,Dquantity, Equantity); 
+    
+    
+  }
+  
+ }
+
+ else if (selection == 2) {
+   int B;
+ B=displayed_productsB_price(100,0);
+  printf("You have pressed button B.\n\n");
+  if (money >= B && Bquantity>0 ) {
+  money=money-B;
+  revenue(B);
+  Bquantity=product_Bquantity(0,1);
+  image(money,66,Aquantity, Bquantity, Cquantity,Dquantity, Equantity);
+  
+  }
+  else {
+    image(money,61,Aquantity, Bquantity, Cquantity,Dquantity, Equantity); 
+    
+  }
+ }
+
+ else if (selection == 3) {
+   int C;
+ C=displayed_productsC_price(100,0);
+  printf("You have pressed button C.\n\n");
+  if (money >= C && Cquantity>0 ) {
+  money=money-C;
+  revenue(C);
+  Cquantity=product_Cquantity(0,1);
+  image(money,67,Aquantity, Bquantity, Cquantity,Dquantity, Equantity);
+  
+  }
+  else {
+    image(money,61,Aquantity, Bquantity, Cquantity,Dquantity, Equantity); 
+    
+  }
+ }
+
+ else if (selection == 4) {
+   int D;
+ D=displayed_productsD_price(100,0);
+  printf("You have pressed button D.\n\n");
+  if (money >= D && Dquantity>0) {
+  money=money-D;
+  revenue(D);
+  Dquantity=product_Dquantity(0,1);
+  image(money,68,Aquantity, Bquantity, Cquantity,Dquantity, Equantity); 
+  
+  }
+  else {
+    image(money,61,Aquantity, Bquantity, Cquantity,Dquantity, Equantity); 
+    
+  }
+ }
+
+ else if (selection == 5) {
+   int E;
+ E=displayed_productsE_price(100,0);
+  printf("You have pressed button E.\n\n");
+  if (money >= E && Equantity>0 ) {
+  money=money-E;
+  revenue(E);
+  Equantity=product_Equantity(0,1);
+  image(money,69,Aquantity, Bquantity, Cquantity,Dquantity, Equantity); 
+  
+   }
+  else {
+  
+    image(money,61,Aquantity, Bquantity, Cquantity,Dquantity,Equantity); 
+    
+  }
+ }
+ else { printf("Invalid choice!\n");
+ money=money;
+
+ money=productselection(money);
+ }
+ 
+  Aquantity=product_Aquantity(0,0),
+ Bquantity=product_Bquantity(0,0),Cquantity=product_Cquantity(0,0),Dquantity=product_Dquantity(0,0),Equantity=product_Equantity(0,0);
+ }
+ if (selection == 0) {
+  printf("Going back!\n\n");
+  image(money, 61, Aquantity, Bquantity, Cquantity,Dquantity, Equantity);
+ } 
+ 
+ return money;
+}
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+void refillproduct(int money);
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+void changeproduct(){
+  printf("\n(9-4) Which product would you like to change?\n1. A\n2. B\n3. C\n4. D\n5. E\n0. Go back\nYour choice: ");
+    int selection;
+    scanf("%d",&selection);
+
+    if (selection == 0) {
+      printf("Going back!\n\n");
+      
+    }  
+     else if (selection == 1) {
+      printf("You are changing product A.\n\n");
+      printf("Enter new product name:");
+        int newprice;
+       char A[]="what",B[]="";
+
+      scanf("%s", A);
+      displayed_productsA_name(A, 999);
+      displayed_productsA_name(A, 1);
+      
+      printf("Enter new product price:");
+      scanf(" %d",&newprice);
+      displayed_productsA_price(newprice, 1);
+
+      printf("The new product A has been filled to full.\n\n");
+
+      int numofA;
+      numofA=10-product_Aquantity(0, 0);
+      product_Aquantity(numofA, 0);
+
+     
+    }
+
+    else if (selection == 2) {
+       printf("You are changing product B.\n\n");
+      printf("(9-4-1) Changing product\nEnter new product name:");
+      char B[20]="Juice";
+     int BB=1;
+      int newprice;
+      
+      scanf("%s",B);
+      displayed_productsB_name(B, BB);
+      printf("Enter new product price:");
+      scanf(" %d",&newprice);
+      displayed_productsB_price(newprice, 1);
+      printf("The new product B has been filled to full.\n\n");
+      int numofB;
+      numofB=10-product_Bquantity(0, 0);
+      product_Bquantity(numofB, 0);
+     
+     
+    }
+
+    else if (selection == 3) {
+     printf("You are changing product C.\n\n");
+      printf("(9-4-1) Changing product\nEnter new product name:");
+      char C[20]="Juice";
+     int CC=1;
+      int newprice;
+      
+      scanf("%s",C);
+      displayed_productsC_name(C, CC);
+      printf("Enter new product price:");
+      scanf("%d",&newprice);
+      displayed_productsC_price(newprice, 1);
+      printf("The new product C has been filled to full.\n\n");
+      int numofC;
+      numofC=10-product_Cquantity(0, 0);
+      product_Cquantity(numofC, 0);
+     
+   
+    }
+
+    else if (selection == 4) {
+    printf("You are changing product D.\n\n");
+      printf("(9-4-1) Changing product\nEnter new product name:");
+      char D[20]="Juice";
+     int DD=1;
+      int newprice;
+      
+      scanf("%s",D);
+      displayed_productsD_name(D, DD);
+      printf("Enter new product price:");
+      scanf("%d",&newprice);
+      displayed_productsD_price(newprice, 1);
+      printf("The new product D has been filled to full.\n\n");
+      int numofD;
+      numofD=10-product_Dquantity(0, 0);
+      product_Dquantity(numofD, 0);
+    
+    }
+
+    else if (selection == 5) {
+     printf("You are changing product E.\n\n");
+      printf("(9-4-1) Changing product\nEnter new product name:");
+      char E[20]="Juice";
+     int EE=1;
+      int newprice;
+      
+      scanf("%s",E);
+      displayed_productsE_name(E, EE);
+      printf("Enter new product price:");
+      scanf("%d",&newprice);
+      displayed_productsE_price(newprice, 1);
+      printf("The new product E has been filled to full.\n\n");
+      int numofE;
+      numofE=10-product_Equantity(0, 0);
+      product_Equantity(numofE, 0);
+     
+     
+    }
+
+    else {
+     printf("\nInvalid choice!\n");
+      changeproduct();
+
+   }
+
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+int vm_service_menu(int originmoney) {
+ int choice;
+ scanf("%d",&choice);
+ int money=originmoney;
+ 
+ if (choice == 1) {
+   char A[100]="Juics",B[100]="Cola",D[100]="Water",C[100]="Tea",E[100]="Coffee";
+   int AA=10,BB=6,CC=5,DD=8,EE=7;
+
+    char showA[100]="Juics",showB[100]="Cola",showD[100]="Water",showC[100]="Tea",showE[100]="Coffee";
+
+if  (product_Aquantity(0, 0) == 0 ) {
+     showA[0]='s';
+     showA[1]='o';
+     showA[2]='l';
+     showA[3]='d';
+     showA[4]=' ';
+     showA[5]='o';
+     showA[6]='u';
+     showA[7]='t';
+     showA[8]='\0';
+   }  else {    
+     if (product_Aquantity(0, 0) == 10){
+     showA[0]='1';
+     showA[1]='0';
+     showA[2]=' ';
+     showA[3]='l';
+     showA[4]='e';
+     showA[5]='f';
+     showA[6]='t';
+     showA[7]='\0';
+     } else {
+     showA[0]=product_Aquantity(0,0)+48;
+     showA[1]=' ';
+     showA[2]='l';
+     showA[3]='e';
+     showA[4]='f';
+     showA[5]='t';
+     showA[6]='\0';
+     }
+
+}
+
+   
+  if  (product_Bquantity(0, 0) == 0 ) {
+     showB[0]='s';
+     showB[1]='o';
+     showB[2]='l';
+     showB[3]='d';
+     showB[4]=' ';
+     showB[5]='o';
+     showB[6]='u';
+     showB[7]='t';
+     showB[8]='\0';
+   } else {
+     if (product_Bquantity(0, 0) == 10){
+     showB[0]='1';
+     showB[1]='0';
+     showB[2]=' ';
+     showB[3]='l';
+     showB[4]='e';
+     showB[5]='f';
+     showB[6]='t';
+     showB[7]='\0';
+     } else {
+     showB[0]=product_Bquantity(0, 0)+48;
+     showB[1]=' ';
+     showB[2]='l';
+     showB[3]='e';
+     showB[4]='f';
+     showB[5]='t';
+     showB[6]='\0';
+     }
+}
+
+
+  if  (product_Cquantity(0, 0) == 0 ) {
+     showC[0]='s';
+     showC[1]='o';
+     showC[2]='l';
+     showC[3]='d';
+     showC[4]=' ';
+     showC[5]='o';
+     showC[6]='u';
+     showC[7]='t';
+     showC[8]='\0';
+   } else {
+     if (product_Cquantity(0, 0) == 10){
+     showC[0]='1';
+     showC[1]='0';
+     showC[2]=' ';
+     showC[3]='l';
+     showC[4]='e';
+     showC[5]='f';
+     showC[6]='t';
+     showC[7]='\0';
+     } else {
+     showC[0]=product_Cquantity(0, 0)+48;
+     showC[1]=' ';
+     showC[2]='l';
+     showC[3]='e';
+     showC[4]='f';
+     showC[5]='t';
+     showC[6]='\0';
+     }
+
+}
+
+  if  (product_Dquantity(0, 0) == 0 ) {
+     showD[0]='s';
+     showD[1]='o';
+     showD[2]='l';
+     showD[3]='d';
+     showD[4]=' ';
+     showD[5]='o';
+     showD[6]='u';
+     showD[7]='t';
+     showD[8]='\0';
+   } else {
+     if (product_Dquantity(0, 0) == 10){
+     showD[0]='1';
+     showD[1]='0';
+     showD[2]=' ';
+     showD[3]='l';
+     showD[4]='e';
+     showD[5]='f';
+     showD[6]='t';
+     showD[7]='\0';
+     } else {
+     showD[0]=product_Dquantity(0, 0)+48;
+     showD[1]=' ';
+     showD[2]='l';
+     showD[3]='e';
+     showD[4]='f';
+     showD[5]='t';
+     showD[6]='\0';
+     }
+
+}
+
+
+  if  (product_Equantity(0, 0) == 0 ) {
+     showE[0]='s';
+     showE[1]='o';
+     showE[2]='l';
+     showE[3]='d';
+     showE[4]=' ';
+     showE[5]='o';
+     showE[6]='u';
+     showE[7]='t';
+     showE[8]='\0';
+   }  else {
+     if (product_Equantity(0, 0) == 10){
+     showE[0]='1';
+     showE[1]='0';
+     showE[2]=' ';
+     showE[3]='l';
+     showE[4]='e';
+     showE[5]='f';
+     showE[6]='t';
+     showE[7]='\0';
+     } else {
+     showE[0]=product_Equantity(0, 0)+48;
+     showE[1]=' ';
+     showE[2]='l';
+     showE[3]='e';
+     showE[4]='f';
+     showE[5]='t';
+     showE[6]='\0';
+     }
+
+}
+
+
+
+     printf("\n(9-1) Machine status\nAmount of revenue: $%d\nAmount of inserted coins: $%d\nProduct information:\nA. %s ($%d) (%s)\nB. %s ($%d) (%s)\nC. %s ($%d) (%s)\nD. %s ($%d) (%s)\nE. %s ($%d) (%s)",revenue(0),originmoney,displayed_productsA_name(D, 0),displayed_productsA_price(DD, 0),showA,displayed_productsB_name(D, 0 ),displayed_productsB_price(DD, 0),showB,displayed_productsC_name(D, 0 ),displayed_productsC_price(DD, 0),showC,displayed_productsD_name(D, 0 ),displayed_productsD_price(DD, 0),showD,displayed_productsE_name(D, 0 ),displayed_productsE_price(DD, 0),showE);
+     
+
+   printf("\n\n");
+   servicequestion();
+   vm_service_menu(money);
+ }
+
+
+  else if (choice == 2) {
+   int earned = revenue(0);
+   int ans=earned+money;
+   printf("\n\n(9-2) All Money is being withdrawn.\n$%d is withdrawn.", ans);
+   money=money-money;
+   revenue(-earned);
+
+   printf("\n\n");
+   servicequestion();
+   vm_service_menu(money);
+  } 
+
+
+ else if (choice == 3) {
+  refillproduct(money);
+  servicequestion();
+   vm_service_menu(money);
+ }
+
+ else if (choice == 4){
+   // changeproduct();
+   printf("\n(9-4) Which product would you like to change?\n1. A\n2. B\n3. C\n4. D\n5. E\n0. Go back\nYour choice: ");
+    int selection;
+    scanf("%d",&selection);
+
+    if (selection == 0) {
+      printf("Going back!\n\n");
+      
+    }  
+     else if (selection == 1) {
+      printf("You are changing product A.\n\n");
+      printf("Enter new product name:");
+        int newprice;
+       char A[100];
+
+      scanf("%s", A);
+      displayed_productsA_name(A, 1);
+      
+      printf("Enter new product price:");
+      scanf(" %d",&newprice);
+      displayed_productsA_price(newprice, 1);
+
+      printf("The new product A has been filled to full.\n\n");
+
+      int numofA;
+      numofA=10-product_Aquantity(0, 0);
+      product_Aquantity(numofA, 0);
+
+     
+    }
+
+    else if (selection == 2) {
+       printf("You are changing product B.\n\n");
+      printf("Enter new product name:");
+      char B[100];
+     int BB=1;
+      int newprice;
+      
+      scanf("%s",B);
+      displayed_productsB_name(B, BB);
+      printf("Enter new product price:");
+      scanf(" %d",&newprice);
+      displayed_productsB_price(newprice, 1);
+      printf("The new product B has been filled to full.\n\n");
+      int numofB;
+      numofB=10-product_Bquantity(0, 0);
+      product_Bquantity(numofB, 0);
+     
+     
+    }
+
+    else if (selection == 3) {
+     printf("You are changing product C.\n\n");
+      printf("Enter new product name:");
+      char C[100];
+     int CC=1;
+      int newprice;
+      
+      scanf("%s",C);
+      displayed_productsC_name(C, CC);
+      printf("Enter new product price:");
+      scanf("%d",&newprice);
+      displayed_productsC_price(newprice, 1);
+      printf("The new product C has been filled to full.\n\n");
+      int numofC;
+      numofC=10-product_Cquantity(0, 0);
+      product_Cquantity(numofC, 0);
+     
+   
+    }
+
+    else if (selection == 4) {
+    printf("You are changing product D.\n\n");
+      printf("Enter new product name:");
+      char D[20]="Juice";
+     int DD=1;
+      int newprice;
+      
+      scanf("%s",D);
+      displayed_productsD_name(D, DD);
+      printf("Enter new product price:");
+      scanf("%d",&newprice);
+      displayed_productsD_price(newprice, 1);
+      printf("The new product D has been filled to full.\n\n");
+      int numofD;
+      numofD=10-product_Dquantity(0, 0);
+      product_Dquantity(numofD, 0);
+    
+    }
+
+    else if (selection == 5) {
+     printf("You are changing product E.\n\n");
+      printf("Enter new product name:");
+      char E[20]="Juice";
+     int EE=1;
+      int newprice;
+      
+      scanf("%s",E);
+      displayed_productsE_name(E, EE);
+      printf("Enter new product price:");
+      scanf("%d",&newprice);
+      displayed_productsE_price(newprice, 1);
+      printf("The new product E has been filled to full.\n\n");
+      int numofE;
+      numofE=10-product_Equantity(0, 0);
+      product_Equantity(numofE, 0);
+     
+     
+    }
+
+    else {
+     printf("Invalid choice!\n\n");
+      //changeproduct();
+
+   }
+   servicequestion();
+   vm_service_menu(money);
+ }
+
+
+  else if (choice == 0){
+    printf("Going Back\n\n");
+    return money;
+  }
+
+
+ else {
+ printf("Invalid choice!\n\n");
+ servicequestion();
+ vm_service_menu(money);
+ }
+
+ return money;
+ 
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+void refillproduct(int money){
+  printf("\n(9-3) Which product would you like to refill?\n1. A\n2. B\n3. C\n4. D\n5. E\n0. Go back\nYour choice: ");
+    int selection;
+    scanf("%d",&selection);
+    if (selection == 0) {
+      printf("Going back!\n");
+       
+    } 
+
+    else if (selection == 1) {
+     int numofA;
+     numofA=10-product_Aquantity(0, 0);
+     product_Aquantity(numofA, 0);
+     printf("\nYou have refilled product A to full.\n\n");
+    
+    }
+
+    else if (selection == 2) {
+       int numofB;
+       numofB=10-product_Bquantity(0, 0);
+       product_Bquantity(numofB, 0);
+       printf("\nYou have refilled product B to full.\n\n");
+      
+    }
+
+    else if (selection == 3) {
+     int numofC;
+     numofC=10-product_Cquantity(0, 0);
+     product_Cquantity(numofC, 0);
+     printf("\nYou have refilled product C to full.\n\n");
+     
+    }
+
+    else if (selection == 4) {
+     int numofD;
+     numofD=10-product_Dquantity(0, 0);
+     product_Dquantity(numofD, 0);
+     printf("\nYou have refilled product D to full.\n\n");
+     
+    }
+
+    else if (selection == 5) {
+     int numofE;
+     numofE=10-product_Equantity(0, 0);
+     product_Equantity(numofE, 0);
+     printf("\nYou have refilled product E to full.\n\n");
+     
+    }
+
+    else {
+     printf("\nInvalid choice!\n");
+      refillproduct(money);
+   }
+
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+void vending_machine(int originmoney) {
+ 
+  int choice,choice4money,money=originmoney,pw1,pw2,pw3,pw4;
+ scanf("%d",&choice);
+ 
+ 
+ //////////////////number selection/////////////
+ if  (choice >3 && choice <4 ) {}
+
+ else if (choice == 4) {
+ choice4money=money;
+ money=choice4money-money;
+ printf("\n(4) Return button is pressed.\n$%d has been returned.\n\n",choice4money);
+ 
+ image(money,61,product_Aquantity(0,0),product_Bquantity(0,0),product_Cquantity(0,0),product_Dquantity(0,0),product_Equantity(0,0));
+ question();
+ vending_machine(money);
+ }
+ 
+ else if (choice ==3 ) {
+ money=productselection(money);
+ question();
+ vending_machine(money);
+ }
+
+ else if (choice ==2 ) {
+ money = coinfunction(money);   
+ vending_machine(money);
+ }
+
+ else if (choice == 1) {
+   char n[100];
+ productinfo();
+ question();
+ vending_machine(money);
+ }
+
+ ////////////choice1/////////////////////////
+ else if (choice == 9){
+   printf("\n\n(9) Opening service menu. Access code is required.\n");
+   printf("Enter access code:");
+   scanf("%d",&pw1);
+   if (pw1==1110) {
+   printf("Correct code!\n\n");
+   servicequestion();
+   money=vm_service_menu(money);
+   printf("\n\n");
+   image(money,61,product_Aquantity(0,0),product_Bquantity(0,0),product_Cquantity(0,0),product_Dquantity(0,0),product_Equantity(0,0));
+   question();
+   vending_machine(money);
+   } else {
+   printf("Incorrect code!\n\n");
+   image(money,61,product_Aquantity(0,0),product_Bquantity(0,0),product_Cquantity(0,0),product_Dquantity(0,0),product_Equantity(0,0));
+   question();
+   vending_machine(money);
+
+   }
+   
+
+ }
+ else if (choice == 0){}
+
+ else {
+ printf("Invalid choice!\n");
+ question();
+ vending_machine(money);
+ }
+
+ return;
+ 
+}
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+
+                     
+int main(void) {  
+  char A[]="Juice",B[]="Cola",D[]="Water",C[]="Tea",E[]="Coffee";
+  int AA=10,BB=6,CC=5,DD=8,EE=7;
+  displayed_productsA_name(A, 1);
+  displayed_productsA_price(AA,1);
+  displayed_productsB_name(B, 1);
+  displayed_productsB_price(BB,1);
+  displayed_productsC_name(C, 1);
+  displayed_productsC_price(CC,1);
+  displayed_productsD_name(D, 1);
+  displayed_productsD_price(DD,1);
+  displayed_productsE_name(E, 1);
+  displayed_productsE_price(EE,1);
+ image(0,61,product_Aquantity(5,0),product_Bquantity(1,0),product_Cquantity(2,0),product_Dquantity(1,0),product_Equantity(9,0));
+ question();
+ vending_machine(0);
+  
+ //printf("Quitted");
+ return 0;
+}

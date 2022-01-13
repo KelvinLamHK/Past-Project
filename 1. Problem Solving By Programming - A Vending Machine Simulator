@@ -24,7 +24,6 @@
 #include <stdio.h>
 #include <string.h>
 
-
 void question() {
  printf("\nWhat would you like to do?\n1. Read product information\n2. Insert coin\n3. Press product button\n4. Press return button\n9. Open service menu (code required)\n0. Quit\nYour choice:");
  return ;

@@ -11,6 +11,6 @@ This project focused on vending machines that take coins (available in Hong Kong
 (2) Project \
 Course: Human-computer Interaction \
 File type: PDF \
-This project focused on low fidelity prototype and 8 golden rules of interface design. \
+This project focused on low fidelity prototype and 8 golden rules of interface design. 
 
 

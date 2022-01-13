@@ -40,7 +40,6 @@ void servicequestion(){
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
-
 int product_Aquantity(int addproduct_A, int sellproduct_A) {
  static int productA,amount;
  

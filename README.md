@@ -9,8 +9,8 @@ This project focused on vending machines that take coins (available in Hong Kong
 ****Access code: 1110** 
 
 (2) Project \
-File type: PDF \
 Course: Human-computer Interaction \
+File type: PDF \
 This project focused on low fidelity prototype and 8 golden rules of interface design. \
 
 

@@ -1,5 +1,5 @@
 # Past-Project
-It is a repository that includes my past projects related to IT.
+It is a repository that includes my past interesting projects.
 
 (1) Project \
 Course: Problem Solving by Programming \

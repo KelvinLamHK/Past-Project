@@ -1,0 +1,1171 @@
+{
+  "intents": [
+    {
+      "intent": "greeting",
+      "examples": [
+        {
+          "text": "hallo"
+        },
+        {
+          "text": "Hi"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Office_details",
+      "examples": [
+        {
+          "text": "I would like to have the information of the seem office"
+        },
+        {
+          "text": "office"
+        },
+        {
+          "text": "Office details"
+        },
+        {
+          "text": "What is the details of the office"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Printing_service",
+      "examples": [
+        {
+          "text": "Can I printing?"
+        },
+        {
+          "text": "Do seem have printing service?"
+        },
+        {
+          "text": "print"
+        },
+        {
+          "text": "Printing service"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "SEEM_Computer_Lab",
+      "examples": [
+        {
+          "text": "common lab"
+        },
+        {
+          "text": "computer"
+        },
+        {
+          "text": "computer lab"
+        },
+        {
+          "text": "How can I go to computer lab"
+        },
+        {
+          "text": "lab"
+        },
+        {
+          "text": "<span class=\"highlight\">Ho Sin Hang Engineering Building</span>"
+        },
+        {
+          "text": "What is the opening time of the laboratory?"
+        },
+        {
+          "text": "when can I go to the lab"
+        },
+        {
+          "text": "when will it open"
+        },
+        {
+          "text": "Where can I finish my lab exercise"
+        },
+        {
+          "text": "Where can I use computer"
+        },
+        {
+          "text": "Where is the computer lab"
+        },
+        {
+          "text": "where is the lab"
+        },
+        {
+          "text": "where is the laboratory"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Seem_Facilities",
+      "examples": [
+        {
+          "text": "facilities"
+        },
+        {
+          "text": "I can use what facilities"
+        },
+        {
+          "text": "seem facilities"
+        },
+        {
+          "text": "What facilities I can use in eng building"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "SEEM_Office_email",
+      "examples": [
+        {
+          "text": "Can I have the email of SE office?"
+        },
+        {
+          "text": "contact by email"
+        },
+        {
+          "text": "email"
+        },
+        {
+          "text": "email address"
+        },
+        {
+          "text": "What is the email of seem office"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "SEEM_Office_fax_number",
+      "examples": [
+        {
+          "text": "fax"
+        },
+        {
+          "text": "fax machine"
+        },
+        {
+          "text": "fax no."
+        },
+        {
+          "text": "fax number"
+        },
+        {
+          "text": "scan and send"
+        },
+        {
+          "text": "what is the fax number of se"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "SEEM_Office_Location",
+      "examples": [
+        {
+          "text": "department office"
+        },
+        {
+          "text": "how can I go to seem office"
+        },
+        {
+          "text": "seem department"
+        },
+        {
+          "text": "seem department office"
+        },
+        {
+          "text": "seem office"
+        },
+        {
+          "text": "system engineering and engineering management"
+        },
+        {
+          "text": "where is the office"
+        },
+        {
+          "text": "where is the seem office"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "SEEM_Office_opening_hours",
+      "examples": [
+        {
+          "text": "open hour"
+        },
+        {
+          "text": "opening hours"
+        },
+        {
+          "text": "open time"
+        },
+        {
+          "text": "time open"
+        },
+        {
+          "text": "when can I go to office"
+        },
+        {
+          "text": "when can I go to the seem office"
+        },
+        {
+          "text": "when open"
+        },
+        {
+          "text": "when will the office open"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "SEEM_Office_phone_number",
+      "examples": [
+        {
+          "text": "call seem"
+        },
+        {
+          "text": "call the office"
+        },
+        {
+          "text": "no."
+        },
+        {
+          "text": "number"
+        },
+        {
+          "text": "office phone number"
+        },
+        {
+          "text": "phone no."
+        },
+        {
+          "text": "phone number"
+        },
+        {
+          "text": "what is the number of the office"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "SEEM_Office_website",
+      "examples": [
+        {
+          "text": "department website"
+        },
+        {
+          "text": "how can i visit seem website"
+        },
+        {
+          "text": "office website"
+        },
+        {
+          "text": "seem webpage"
+        },
+        {
+          "text": "seem website"
+        },
+        {
+          "text": "website"
+        },
+        {
+          "text": "what is the web address of the seem"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "SEEM_printing_location",
+      "examples": [
+        {
+          "text": "printer"
+        },
+        {
+          "text": "printer location"
+        },
+        {
+          "text": "printing location"
+        },
+        {
+          "text": "where can i print"
+        },
+        {
+          "text": "where is the printer"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "SEEM_printing_quota",
+      "examples": [
+        {
+          "text": "printing limit"
+        },
+        {
+          "text": "printing quota"
+        },
+        {
+          "text": "print limit"
+        },
+        {
+          "text": "print quota"
+        },
+        {
+          "text": "quota"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "SEEM_water_dispensers",
+      "examples": [
+        {
+          "text": "Are there any water dispensers"
+        },
+        {
+          "text": "Can I fill the water"
+        },
+        {
+          "text": "ERB"
+        },
+        {
+          "text": "fill water"
+        },
+        {
+          "text": "SHB"
+        },
+        {
+          "text": "<span class=\"highlight\">Ho Sin Hang Engineering Building</span>"
+        },
+        {
+          "text": "<span class=\"highlight\">William M.W. Mong Engineering Building</span>"
+        },
+        {
+          "text": "water"
+        },
+        {
+          "text": "water dispensers"
+        },
+        {
+          "text": "water fountain"
+        },
+        {
+          "text": "water refill"
+        },
+        {
+          "text": "where can I fill my water"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "thank",
+      "examples": [
+        {
+          "text": "thank"
+        },
+        {
+          "text": "thanks"
+        },
+        {
+          "text": "thank you"
+        },
+        {
+          "text": "thx"
+        },
+        {
+          "text": "thz"
+        },
+        {
+          "text": "tk"
+        },
+        {
+          "text": "tx"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "Near_ERB",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "William M.W. Mong Engineering Building",
+          "synonyms": [
+            "ERB",
+            "M.W. Mong ",
+            "M.W. Mong Engineering Building",
+            "William M.W. Mong",
+            "William M.W. Mong Engineering Building"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Near_SHB",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Ho Sin Hang Engineering Building",
+          "synonyms": [
+            "Ho Sin Hang",
+            "Ho Sin Hang Engineering Bldg",
+            "SHB"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "no",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "no",
+          "synonyms": [
+            "I don't have",
+            "n",
+            "neither",
+            "never",
+            "none",
+            "not",
+            "nothing"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "SEEM_Facilities",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Computer Lab",
+          "synonyms": [
+            "computer",
+            "computers",
+            "lab",
+            "laboratories",
+            "laboratory",
+            "labs",
+            "pc"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "printing location",
+          "synonyms": [
+            "printer",
+            "printers",
+            "printing"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "printing quota",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "water dispensers",
+          "synonyms": [
+            "water",
+            "water fountain"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "SEEM_Office",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "email",
+          "synonyms": [
+            "email address"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "fax number",
+          "synonyms": [
+            "fax"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "lunch hour",
+          "synonyms": [
+            "lunch time"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "opening hours",
+          "synonyms": [
+            "open hours",
+            "opening time",
+            "working hours"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "phone number",
+          "synonyms": [
+            "cellphone",
+            "no.",
+            "number",
+            "numbers",
+            "phone",
+            "phone no.",
+            "phones"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "website",
+          "synonyms": [
+            "homepage",
+            "webpage",
+            "webpages",
+            "websites"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_3_1634046929127",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "#greeting",
+      "output": {
+        "generic": [
+          {
+            "title": "I can answer the details of the Seem Office and facilities. Which details you would like to ask?",
+            "options": [
+              {
+                "label": "Office",
+                "value": {
+                  "input": {
+                    "text": "Office details"
+                  }
+                }
+              },
+              {
+                "label": "Facilities",
+                "value": {
+                  "input": {
+                    "text": "Facilities"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#greeting",
+      "dialog_node": "node_1_1634046381992",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "#Office_OpeningHour",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It is opening at 09:00 to 17:00. 12:30 -\n13:00 will be lunch hour and the office\nwill not open in this period."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_6_1634052989011"
+      },
+      "conditions": "#SEEM_Office_opening_hours",
+      "dialog_node": "node_1_1634047433397",
+      "previous_sibling": "node_7_1634047869950"
+    },
+    {
+      "type": "standard",
+      "title": "#Office_phone_number",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You can phone (852) 3943 8313 for General Enquiries"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_6_1634052989011"
+      },
+      "conditions": "#SEEM_Office_phone_number",
+      "dialog_node": "node_1_1634047500416",
+      "previous_sibling": "node_1_1634047433397"
+    },
+    {
+      "type": "standard",
+      "title": "@Near Ho Sin Hang Engineering Building (SHB)",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You can go to Ho Sin Hang Engineering Building (SHB)\n Room 123 or 904.  They  are opening at 9am - 5pm (Mondays to Fridays)."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1634050197983",
+      "conditions": "@Near_SHB",
+      "dialog_node": "node_1_1634051030359"
+    },
+    {
+      "type": "standard",
+      "title": "#Seem_Facilities",
+      "output": {
+        "generic": [
+          {
+            "title": "You can use the following facilities. Do you want to know more about",
+            "options": [
+              {
+                "label": "Computer Lab",
+                "value": {
+                  "input": {
+                    "text": "Computer Lab"
+                  }
+                }
+              },
+              {
+                "label": "Printing Services",
+                "value": {
+                  "input": {
+                    "text": "Printing service"
+                  }
+                }
+              },
+              {
+                "label": "Water Dispensers",
+                "value": {
+                  "input": {
+                    "text": "Water Dispensers"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#Seem_Facilities",
+      "dialog_node": "node_2_1634049517323",
+      "previous_sibling": "node_1_1634046381992"
+    },
+    {
+      "type": "standard",
+      "title": "#thankyou",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Do you have any question?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#thank",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_3_1634046929127",
+      "previous_sibling": "node_4_1634047571674"
+    },
+    {
+      "type": "standard",
+      "title": "#Office_Location",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It is at Room 609, William M.W. Mong Engineering Building\nThe Chinese University of Hong Kong\nShatin, N.T., Hong Kong"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_6_1634052989011"
+      },
+      "conditions": "#SEEM_Office_Location",
+      "dialog_node": "node_4_1634047155311",
+      "previous_sibling": "node_8_1634050197983"
+    },
+    {
+      "type": "standard",
+      "title": "#Office_fax_number",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You can Fax (852) 2603 5505."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_6_1634052989011"
+      },
+      "conditions": "#SEEM_Office_fax_number",
+      "dialog_node": "node_4_1634047571674",
+      "previous_sibling": "node_1_1634047500416"
+    },
+    {
+      "type": "standard",
+      "title": "#SEEM_printing_location",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You can go to Room 602, 612 or 909 at Ho Sin Hang Engineering Building (SHB) to enjoy the print service."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#SEEM_printing_location",
+      "dialog_node": "node_4_1634054511953",
+      "previous_sibling": "node_8_1634053831065"
+    },
+    {
+      "type": "standard",
+      "title": "#SEEM_printing_quota",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Each SEEM student will have '75 HK Dollars' print quotas!\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#SEEM_printing_quota",
+      "dialog_node": "node_4_1634054525311",
+      "previous_sibling": "node_4_1634054511953"
+    },
+    {
+      "type": "standard",
+      "title": "#SEEM_water_dispensers",
+      "output": {
+        "generic": [
+          {
+            "title": "Which engineering building you would like to go to? I will recommend the nearest water dispensers to you!",
+            "options": [
+              {
+                "label": "Ho Sin Hang Engineering Building (SHB)",
+                "value": {
+                  "input": {
+                    "text": "SHB"
+                  }
+                }
+              },
+              {
+                "label": "William M.W. Mong Engineering Building (ERB)",
+                "value": {
+                  "input": {
+                    "text": "ERB"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#SEEM_water_dispensers",
+      "dialog_node": "node_5_1634052517784",
+      "previous_sibling": "node_4_1634054525311"
+    },
+    {
+      "type": "standard",
+      "title": "@Near_ERB",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You can use the water dispensers at 4/F in William M W Mong Engineering Building."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1634052517784",
+      "conditions": "@Near_ERB",
+      "dialog_node": "node_5_1634052780271"
+    },
+    {
+      "type": "standard",
+      "title": "No",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Have a nice day!"
+              },
+              {
+                "text": "Goodbye!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1634046929127",
+      "conditions": "@no",
+      "dialog_node": "node_5_1634055335791"
+    },
+    {
+      "type": "standard",
+      "title": "#Office_Website",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You can visit https://www.se.cuhk.edu.hk/"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_6_1634052989011"
+      },
+      "conditions": "#SEEM_Office_website",
+      "dialog_node": "node_6_1634047830761",
+      "previous_sibling": "node_4_1634047155311"
+    },
+    {
+      "type": "standard",
+      "title": "@Near William M.W. Mong Engineering Building (ERB)",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You can go to William M.W. Mong Engineering Building (ERB) Room 909. It is opening at 9am - 5pm (Mondays to Fridays)."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1634050197983",
+      "conditions": "@Near_ERB",
+      "dialog_node": "node_6_1634051048710",
+      "previous_sibling": "node_1_1634051030359"
+    },
+    {
+      "type": "standard",
+      "title": "#Office_details",
+      "output": {
+        "generic": [
+          {
+            "title": "Do you want to ask the following details?",
+            "options": [
+              {
+                "label": "Office Location",
+                "value": {
+                  "input": {
+                    "text": "Location"
+                  }
+                }
+              },
+              {
+                "label": "Office Web address",
+                "value": {
+                  "input": {
+                    "text": "address "
+                  }
+                }
+              },
+              {
+                "label": "Office Email",
+                "value": {
+                  "input": {
+                    "text": "email"
+                  }
+                }
+              },
+              {
+                "label": "Office Number ",
+                "value": {
+                  "input": {
+                    "text": "phone number"
+                  }
+                }
+              },
+              {
+                "label": "Office Fax Number",
+                "value": {
+                  "input": {
+                    "text": "fax"
+                  }
+                }
+              },
+              {
+                "label": "Office Opening Hour",
+                "value": {
+                  "input": {
+                    "text": "opening hour"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#Office_details",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_6_1634052989011",
+      "previous_sibling": "node_2_1634049517323"
+    },
+    {
+      "type": "standard",
+      "title": "Office_email",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You can email "
+              },
+              {
+                "text": "You can email seem office by dept@se.cuhk.edu.hk"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_6_1634052989011"
+      },
+      "conditions": "#SEEM_Office_email",
+      "dialog_node": "node_7_1634047869950",
+      "previous_sibling": "node_6_1634047830761"
+    },
+    {
+      "type": "standard",
+      "title": "#Seem_computer_lab",
+      "output": {
+        "generic": [
+          {
+            "title": "Which engineering building you would like to go to? I will recommend the nearest lab to you!",
+            "options": [
+              {
+                "label": "Ho Sin Hang Engineering Building (SHB)",
+                "value": {
+                  "input": {
+                    "text": "Ho Sin Hang Engineering Building"
+                  }
+                }
+              },
+              {
+                "label": "William M.W. Mong Engineering Building (ERB)",
+                "value": {
+                  "input": {
+                    "text": "ERB"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#SEEM_Computer_Lab",
+      "dialog_node": "node_8_1634050197983",
+      "previous_sibling": "node_5_1634052517784"
+    },
+    {
+      "type": "standard",
+      "title": "@Near_SHB",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You can use the water dispensers at 1/F, 9/F or 10/F in Ho Sin‐Hang Engineering Building."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1634052517784",
+      "conditions": "@Near_SHB",
+      "dialog_node": "node_8_1634052781377",
+      "previous_sibling": "node_5_1634052780271"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Each SEEM student will have '75 HK Dollars' print quotas.  \nYou can go to Room 602, 612 or 909 at Ho Sin Hang Engineering Building (SHB) to enjoy the print service."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Printing_service",
+      "dialog_node": "node_8_1634053831065",
+      "previous_sibling": "node_6_1634052989011"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. How can I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [
+    {
+      "text": "ERB"
+    },
+    {
+      "text": "<span class=\"highlight\">Ho Sin Hang Engineering Building</span>"
+    }
+  ],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "intent_classification": {
+      "training_backend_version": "v2"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "seem3680hw2",
+  "language": "en",
+  "description": ""
+}
